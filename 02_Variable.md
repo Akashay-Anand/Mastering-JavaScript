@@ -11,7 +11,7 @@
 - Number ===> 20
 - Boolean ===> true, false
 - Array ===> [“blue”,”red”]
-- Objects ===> { name: “jenny”, age: 25 }
+- Objects ===> { name: “kumar”, age: 19 }
 - Undefined
 - Null
   
@@ -61,7 +61,7 @@ console.log(b1); // output: 2
 
 **VAR HOISTING:** Var variables can be accessed before their declaration. Javascript moves all the var variables to the top of the function or global context.
 
-![Alt text](image.png)
+![Alt text](/assets/var-hoisted.png)
 
 
 **SCOPE OF VAR VARIABLE:** 
