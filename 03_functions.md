@@ -85,5 +85,16 @@ let nameOfFunction = (parameters) => {
 
 ### Immediately Invoked Function Expressions (IIFEs)
 
-> IIFE is another function expression notation (explicitly an anonymous function) that works in isolation and is independent of any other code. It gets invoked immediately where it is defined.
-> 
+> IIFE function expression notation (explicitly an anonymous function) that works in isolation and is independent of any other code. It gets invoked immediately where it is defined.
+>
+```javascript
+(function (){
+	let pi = "3.141"
+    console.log(pi)
+})();
+```
+
+<hr/>
+<br>
+
+# Function Scope and Closures

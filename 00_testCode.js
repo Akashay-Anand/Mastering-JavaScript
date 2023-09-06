@@ -25,3 +25,17 @@ console.log("hold() = " + hold()) // can execute a function with brackets
 
 
 
+// arrow functions // also anonymous fun.
+
+let arrowFun = () => {
+    console.log("this is a arrow function");
+}
+
+arrowFun();
+
+// Immediately Invoked Function Expressions (IIFEs)
+(function (){
+	let pi = 3.141
+    console.log(pi)
+})();
+// the function get invocked by its on. 
