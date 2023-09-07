@@ -12,10 +12,8 @@
 - browser
 - >  JavaScript Engine
 - >  FireFox: SpiderMonkey
-- > Chrome: v8
-  
-- Node
-- > v8
+- >  Chrome: v8
+- >  Node: v8
 
 
 # JavaScript vs ECMAScript?
@@ -40,7 +38,7 @@ console.log("hello " + x);
 
 ## external js
 - add that to html ; most of the case at the end of body
-- ```javascript
+- ```html
 <html>
 <head> <head>
 <body>
@@ -53,6 +51,11 @@ console.log("hello " + x);
 <script src="jsfile.js"></script>
 <body>
 <html>
-
 ```
+
+<br/>
+<hr/>
+<hr/>
+<br/>
   
+

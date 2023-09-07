@@ -98,3 +98,21 @@ let nameOfFunction = (parameters) => {
 <br>
 
 # Function Scope and Closures
+
+
+
+<br/>
+<br/>
+<br/>
+<hr/>
+<hr/>
+<br/>
+<br/>
+<br/>
+
+Note: /////////////////////
+- ASYNC, SYNC, callback, etc. will be cover in other section
+
+
+Question //////////////////////////////////////////////////
+Q) function are object?
