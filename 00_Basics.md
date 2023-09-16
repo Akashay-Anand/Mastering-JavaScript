@@ -1,7 +1,7 @@
 # What si JavaScript
 > popular programing language
-- client side scripting // [Note01]
-- Interpreted language  // [Note02]
+- client side scripting // [Note-01]
+- Interpreted language  // [Note-02]
 - Object-Oriented language
 - can be executed on server side using Node.js
 
@@ -36,6 +36,9 @@ console.log("hello " + x);
 ```
 
 # where to add JavaScript 
+
+> The placement and loading strategy of JavaScript files can significantly impact the Critical Rendering Path (CRP) and the perceived performance of your web page. // [Note-03]
+
 > can be added in three ways
 > - within the < head>
 > - within the < body>
@@ -74,15 +77,17 @@ console.log("hello " + x);
 
 - Wrap your code in event listeners like DOMContentLoaded or use modern techniques like async/await to ensure scripts run at the right time
 
-> Difference between async and defer
+> Difference between async and defer; (both are *Non-Blocking*)
 > 1. **Defer attribute :** it tells the browser to download the script in the background while parsing the HTML content.
 > - script execution is deferred until after the HTML parsing is complete but before the DOMContentLoaded event is fired.
-> -  Use defer when you want to ensure that your script is executed in the order it appears in the document, and you want it to run after the HTML has been parsed but before the DOMContentLoaded event. // [Note03]
+> -  Use defer when you want to ensure that your script is executed in the order it appears in the document, and you want it to run after the HTML has been parsed but before the DOMContentLoaded event. // [Note-04]
 > 
 > 2. **Async Attribute :** it tells the browser to download the script in the background while parsing the HTML content,
 > - Scripts with the async attribute are executed as soon as they are downloaded and ready, which means they may not run in the order they appear in the document.
 
-
+> **Delay Loading (Lazy Loading) (Non-Blocking):
+> - You can delay the loading of JavaScript files until they are explicitly needed by the user. This is known as lazy loading.
+> - use techniques like dynamically creating script elements or using the import() function (for ES6 modules) to load scripts on-demand.
 
 <br/><br/><br/>
 <hr/>
@@ -91,11 +96,11 @@ console.log("hello " + x);
 
 ### Notes
 
-[Note01]: 
+[Note-01]: 
 - *Scripting Language:* A scripting language is a programming language that is designed for scripting. Unlike compiled languages, where code is translated into machine code before execution, scripts are typically interpreted at runtime. JavaScript, Python, Perl, and Ruby are examples of scripting languages.
   
 
-[Note02]:
+[Note-02]:
 - JavaScript is primarily an interpreted language. When you write JavaScript code, it is executed by a JavaScript engine in a web browser or a server-side environment like Node.js. The JavaScript engine reads the code line by line and executes it without a separate compilation step.
 - However, modern JavaScript engines often use **Just-In-Time (JIT)** compilation techniques to optimize and speed up the execution of JavaScript code. This means that the JavaScript code is compiled into machine code just before it is executed,
 
@@ -106,7 +111,13 @@ console.log("hello " + x);
 > - **generates machine code for the optimized hot code paths.** This machine code can be executed directly by the CPU, which is much **faster than interpreting** it
 > - To further speed up execution, the generated machine code is often cached.
 
-[Note03]: 
+[Note-03]: 
+- CRP stands for Critical Rendering Path, which is a concept in web performance optimization that refers to the sequence of steps the browser takes to convert an HTML document into a fully rendered page on the user's screen. 
+- By optimizing the CRP, web developers can ensure that the most important content is displayed quickly, providing a better user experience and improving the overall performance of their websites.
+
+
+
+[Note-04]: 
 > **DOMContentLoaded event:**
 - The DOMContentLoaded event is an important event in web development that is fired by a web browser when the HTML document has been completely loaded and parsed.
 - external resources such as stylesheets and images may not have finished downloading and rendering.

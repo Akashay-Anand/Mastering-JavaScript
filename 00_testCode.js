@@ -1,3 +1,14 @@
+// Variables //////////////////////////////////
+
+// TDZ example 
+function foo01() {
+    console.log("variable: " + var01);
+    let var01 = 5;
+}
+// foo01();
+// console.log(var02)
+// let var02 = 5;
+
 // Function's //////////////////////////////////
 
 // named function

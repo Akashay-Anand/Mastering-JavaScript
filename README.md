@@ -12,9 +12,16 @@
 ## Topics covered
 #learn_what_matters
 
+1. Basic Core Concepts
+-  Where to Place JS file(ex: head, end of body, async, differ, delay load) ? Critial Rendering Path - (if browser is rendering something than what is blocking or non-blocking)
+
 1. word vs Keywords
 2. Scope of variables
-3. var const let
+3. var const let - TDZ
+4. Function - Types - Scope, closure
+5. Memory
+6. sync_async function
+7. callback
 
 
 
@@ -29,11 +36,11 @@
 - Promise.resolve()
 - Micro Task
 - 
-- Where to Place JS file(ex: head, end of body, async, differ, delay load) ? Critial Rendering Path - (if browser is rendering something than what is blocking or non-blocking)
+
 -   
-- Difference between let, const, var?    - Block Scoping - TDZ
 - 
--  closure? 
+- 
+- 
 - 
 - Functional Programming? - Pure Functions ; Polyfill (map, filter reduce); compose ; Curring ; Higher order functions ;
 - 

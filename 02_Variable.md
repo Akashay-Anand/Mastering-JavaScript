@@ -38,7 +38,7 @@ console.log(name); // value: undefined (default)
 ```
 > it's default value is **undefined** ( if we don’t assign any value at the time of declaration)
 
-> If you try to access the variable that doesn’t exist, you will get an error message. (Uncaught ReferenceError: < var > not defined)
+> If you try to access the variable that doesn’t exist, you will get an error message. (Uncaught ReferenceError: variable not defined)
 >
 
 ```javascript
@@ -194,6 +194,25 @@ person = {job : "marketing"} // error: typeError
 ```
 
 **REDECLARATION OF CONSTANT:** Constants cannot change through re-assignment and cannot be re-declared in the same scope.
+
+<br/> <br/> <br/>
+
+# TDZ (Temporal Dead Zone);
+- The term "TDZ" stands for "Temporal Dead Zone," and it is a concept associated with the let and const variable declarations in JavaScript.
+
+> The Temporal Dead Zone is the period between entering a scope (such as a function or block) and the actual declaration of a let or const variable within that scope. 
+>
+> During this period, the variable exists, but accessing it will result in a ReferenceError. It's called a **"dead zone"** because the variable is in a state where it cannot be used.
+
+// example
+```js
+function example() {
+  console.log(x); // ReferenceError: Cannot access 'x' before initialization
+  let x = 10;
+  console.log(x); // 10
+}
+example();
+```
 
 
 <br/> <br/> <br/>

@@ -44,7 +44,7 @@ function nameOfFunction() {
 let namedFunction = function myFunction(){
 	//some code here...
 }
-// cae ber refer using variable name and function name
+// can be refer using variable name and function name
 
 // 2. unnamed/anonymous expression
 let anonymousFunction = function(){
