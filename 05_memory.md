@@ -113,7 +113,7 @@ ex:  let's say within a function we create an object and that object gets stored
 ## References
 
 - https://blog.alexdevero.com/memory-life-cycle-heap-stack-javascript/
-- https://medium.com/@allansendagi/javascript-fundamentals-call-stack-and-memory-heap-401eb8713204
+- https://medium.com/@allansendagi/javascript-fundamentals-call-stack-and-memory-heap-401eb8713204 
 - https://medium.com/@selmankoral/memory-management-in-javascript-781e1098e5b3
 - https://blog.alexdevero.com/garbage-collection-in-javascript/#garbage-collection-and-how-it-works
 - 
