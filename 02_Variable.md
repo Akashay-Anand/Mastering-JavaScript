@@ -7,6 +7,8 @@
 
 ### Types of Data which we store in a variable
 
+> A primitive value is a value that has no properties or methods.
+
 - String ===> “Anand”
 - Number ===> 20
 - Boolean ===> true, false
@@ -15,7 +17,8 @@
 - Undefined 
 - Null
 
->look at [Note-01] for more context on 'undefined' and 'null;
+> look at [Note-01] for more context on 'undefined' and 'null;
+> look at [Note-02] for more context on Object ;
 
 ### And there are 6 common known falsy values in Javascript(full list), which are:
 
@@ -283,3 +286,57 @@ let person = {
 };
 ```
 > Usage: null is often used when you want to clear the value of a variable or indicate that an object property doesn't hold any data.
+
+
+[Note-02]:
+
+
+> In JavaScript, almost "everything" is an object. All JavaScript values, except primitives, are objects.
+
+- Booleans can be objects (if defined with the new keyword)
+- Numbers can be objects (if defined with the new keyword)
+- Strings can be objects (if defined with the new keyword)
+- Dates are always objects
+- Maths are always objects
+- Regular expressions are always objects
+- Arrays are always objects
+- Functions are always objects
+- Objects are always objects
+  
+> object as a variable
+> - objects can contain many values.
+> - Object values are written as name : value pairs (name and value separated by a colon).
+
+> Object Propertie: The named values, in JavaScript objects, are called properties.
+
+> Object Methods
+- Methods are actions that can be performed on objects.
+- Object properties can be both primitive values, other objects, and functions.
+- An object method is an object property containing a function definition.
+
+// example of object
+```js
+// create object with object literal
+// Using an object literal, you both define and create an object in one statement.
+// An object literal is a list of name:value pairs (like age:50) inside curly braces {}.
+
+const person1 = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// creates an empty JavaScript object, and then adds 4 properties:
+
+const person2 = {};
+person2.firstName = "John";
+person2.lastName = "Doe";
+person2.age = 50;
+person2.eyeColor = "blue";
+
+// create a new JavaScript object using new Object(), and then adds 4 properties:
+
+const person3 = new Object();
+person3.firstName = "John";
+person3.lastName = "Doe";
+person3.age = 50;
+person3.eyeColor = "blue";
+
+```
+> They are addressed by reference, not by value.

@@ -40,7 +40,7 @@ function name(name) {
         console.log(name , flag);
     }    
     console.log(flag)
-    console.log(ok , flag);
+    console.log(ok , flag); 
 }
 
 // name('anand');
@@ -51,7 +51,7 @@ function name(name) {
 function foo(marks) {
     if(marks > 30){
         let flag = true;
-        console.log(flag)
+        console.log(flag) 
     }
     // console.log(flag);
 }

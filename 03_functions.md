@@ -94,8 +94,30 @@ let nameOfFunction = (parameters) => {
 })();
 ```
 
+<br/>
 <hr/>
-<br>
+<br/>
+
+# Construct functions;
+> A constructor function in JavaScript is a specific type of function that is used to create and initialize objects. While constructor functions are written in JavaScript just like regular functions, they serve a special purpose in object-oriented programming.
+
+```js
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Creating instances using the constructor function
+let person1 = new Person("Alice", 30);
+let person2 = new Person("Bob", 25);
+
+```
+
+
+<br/>
+<hr/>
+<br/>
+
 
 # Function Scope and Closures
 
@@ -110,9 +132,9 @@ let nameOfFunction = (parameters) => {
 <br/>
 <br/>
 
+
 Note: /////////////////////
 - ASYNC, SYNC, callback, etc. will be cover in other section
 
 
 Question //////////////////////////////////////////////////
-Q) function are object?
