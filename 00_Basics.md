@@ -1,5 +1,5 @@
 # What si JavaScript
-> popular programing language
+> popular programing/Scripting language // [Note-05]
 - client side scripting // [Note-01]
 - Interpreted language  // [Note-02]
 - Object-Oriented language
@@ -128,3 +128,22 @@ document.addEventListener('DOMContentLoaded', function () {
   // Your code to manipulate the DOM or perform other actions
 });
 ```
+
+[Note-05]:
+> JavaScript is programing as well as scripting languages
+
+### Programing language vs Scripting language
+
+> Programing language
+> - use for development work
+> - code get **compiled** into binary or machine code.
+> - it can be used to create complex, large-scale applications. It supports features like variables, data types, functions, loops, and objects, which are characteristic of programming languages. 
+
+> Scripting language
+> - use for Automatiopn work
+> - code is executed line by line by an **interpreter**.
+> - used for scripting tasks. In this context, it is used to make web pages interactive by manipulating the Document Object Model (DOM), handling events, and responding to user actions.
+> - Scripting tasks generally refer to smaller-scale, specific actions or processes that are automated or controlled using scripts.
+
+
+[Note]: Python is typically classified as a high-level scripting language

@@ -38,10 +38,6 @@
 - 
 
 -   
-- 
-- 
-- 
-- 
 - Functional Programming? - Pure Functions ; Polyfill (map, filter reduce); compose ; Curring ; Higher order functions ;
 - 
 - 'this' ; with object, function  ect. ; call bind apply ; why this went to window? 

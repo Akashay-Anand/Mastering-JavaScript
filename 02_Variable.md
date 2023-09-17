@@ -12,9 +12,19 @@
 - Boolean ===> true, false
 - Array ===> [“blue”,”red”]
 - Objects ===> { name: “kumar”, age: 19 }
-- Undefined
+- Undefined 
 - Null
-  
+
+>look at [Note-01] for more context on 'undefined' and 'null;
+
+### And there are 6 common known falsy values in Javascript(full list), which are:
+
+- keyword false
+- number 0 and -0 (Also 0n and -0n )
+- Empty string values: “”, '' , ``
+- null (the absence of any value)
+- undefined
+- NaN — not a number
 
 ### Two ways of Variable declaration
 - **Var** ; (old, not used much)
@@ -223,3 +233,53 @@ example();
 
 * Prefer let over var to define variables as let will keep our variables in the right scope and make our code more manageable.
 * Use const to define those values which you don’t want to change in your entire application like api_url, PI value etc.
+
+
+<br/> <br/> <br/>
+<hr/> <hr/> <hr/>
+<br/> <br/> <br/>
+
+
+# Note
+
+[Note-01]:
+
+> undefined is used when a variable or property has not been assigned a value, whereas null is used to explicitly indicate the absence of a meaningful value or to clear a variable or property.
+- undefined often arises implicitly when something has not been assigned, and it's not usually set deliberately by developers.
+- null is explicitly assigned by developers when they want to indicate that there is no meaningful value, often as part of the program's design.
+## Undefined values
+
+> Meaning: undefined is a special value in JavaScript that is assigned to variables that have been declared but have not been assigned a value, or to object properties that do not exist.
+
+> Example: If you declare a variable without assigning a value to it, it will have an undefined value by default.
+```js
+// Ex 1
+let x;
+console.log(x); // Outputs: undefined
+
+// Ex 2
+let obj = {};
+console.log(obj.propertyThatDoesNotExist); // Outputs: undefined
+function doSomething() {}
+let result = doSomething(); // The function doesn't return a value, so 'result' is undefined
+```
+> Usage case: It's common to see undefined when you access an object property that doesn't exist or when a function doesn't return a value.
+
+> Note: It's also possible to explicitly assign the value undefined to a variable or property, but this is generally discouraged unless there's a specific reason for doing so.
+
+
+## Null Value
+
+> Meaning: null is another special value in JavaScript. It is explicitly assigned to variables or properties to indicate that they intentionally have no value or that they are empty.
+
+> Example: You can assign null to variables or object properties when you want to explicitly indicate the absence of a value.
+```js
+let y = null;
+console.log(y); // Outputs: null
+
+let person = {
+    name: "John",
+    age: null, // Age is intentionally set to null to indicate it's unknown or not applicable
+};
+```
+> Usage: null is often used when you want to clear the value of a variable or indicate that an object property doesn't hold any data.
